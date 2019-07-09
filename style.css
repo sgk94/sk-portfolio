@@ -1,0 +1,32 @@
+h1 {
+    color: white;
+}
+
+#illistrious-card {
+    margin: 0px;
+    padding: 0px;
+}
+
+#gettingthere-card {
+    margin: 0px;
+    padding: 0px;
+}
+
+#guessman-card {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #bbdefb;
+}
+
+.nav-wrapper {
+    background-color: #659DBD;
+    margin: 0px 0px 20px 0px;
+}
+
+a.btn {
+    background-color: #659DBD;
+}
