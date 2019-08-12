@@ -1,6 +1,7 @@
 nav.nav-wrapper.grey.lighten-5 {
     height: 5em;
     background-color: #fafafa;
+    padding: 0 15px 0 30px;
 }
 
 img {
@@ -8,37 +9,39 @@ padding: 5px;
 margin: 5px;
 }
 
+a.hide-on-small-only.left.brand-logo.black-text {
+    padding: 5px;
+}
+
 a.black-text {
     color:black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 5px 10px;
     text-decoration: none;
+    height: 64px;
 }
 
-ul{
+/* ul{
     padding: 0px 30em;
-}
+} */
 
 i {
-    padding: 1em 0px 0px 0px;
-    color:#fafafa
+    color:#f5f5f5;
 }
 h1 {
-    color: #fafafa
-}
-
-h3 {
-    padding: 20px;
     color: #fafafa;
 }
 
-nav ul {
-    margin: 0 0 0 300px;
-    padding: 0 0 0 300px;
+h3 {
+    padding: 5px;
+    color: #fafafa;
 }
 
-li{
-    padding: 1em 0px 0px 6em;
+#shawnprof {
+    padding: 0;
+    border-style: solid;
+    border-color: black;
+    border-width: 10px;
 }
 
 #project-card {
@@ -47,7 +50,7 @@ li{
     justify-content: center;
     /* margin: 2.5px; */
     padding: 0px;
-    height: 30em;
+    height: 15em;
     /* width: 25em; */
     background-color: #7EBCE6;
 }
@@ -61,7 +64,7 @@ li{
     /* display: flex; */
     align-items: center;
     justify-content: center;
-    height: 30em;
+    height: 15em;
     /* width: 25em; */
     /* margin: 2.5px; */
     padding: 0px;
@@ -77,7 +80,7 @@ li{
     /* display: flex; */
     align-items: center;
     justify-content: center;
-    height: 30em;
+    height: 15em;
     /* width: 25em; */
     /* margin: 2.5px; */
     padding: 0px;
@@ -98,6 +101,17 @@ body {
     background-color: #fafafa;
     /* background-color: #f5f5f5; */
     /* background-color: black; */
+}
+
+ul.col.s8.collapsible {
+    padding: 0px;
+    margin: 5em 0 0 0;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    padding: 5px 0px;
 }
 
 .nav-wrapper {

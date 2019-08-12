@@ -12,28 +12,31 @@
     <script defer src="main.js"></script>
 </head>
 <body>
-    <nav class="grey lighten-5 z-depth-0">
-        <a href="#" class="left brand-logo hide-on-med-and-down"><img src="./images/sknav.png" alt=""></a>
-        <ul>
-            <li><a class="black-text">Projects</a></li>
-            <li><a class="black-text">test</a></li>
+    <nav class="nav-wrapper grey lighten-5 z-depth-0">
+        <a href="#" class="hide-on-small-only left brand-logo black-text">Shawn Kim</a>
+        <ul class="right">
+            <li><a class="black-text">HOME</a></li>
+            <!-- <li><a class="black-text">PROJECTS</a></li> -->
+            <li><a class="black-text" target="_blank" href="https://github.com/sgk94"><img src="./images/git32.png" alt="github"></a></li>
+            <li><a class="black-text" target="_blank" href="https://www.linkedin.com/in/shawngkim/"><img src="./images/linked34.png" alt="github"></a></li>
         </ul>
     </nav>
     <main class="container">
         <!-- <div class="card-panel"> -->
             <div class="row">
                 <div class="col s4">
-                    <img class="circle responsive-img" src="./images//shawnprof.png" alt="shawn">
+                    <img id="shawnprof" class="circle responsive-img" src="./images//shawnprof.png" alt="shawn">
                 </div>
                 <div class="col s8">
-                    <h3 class="black-text center">Shawn Kim</h1>
-                    <h5 class="center">Full Stack Developer</h2>
-                    <p>I’m a marketer turned full stack developer looking to find a role that challenges me and allows me to use my refined skills in customer relations in the tech field. As a former marketer, I worked alongside engineers and participated in product testing. This started my passion for improving company products and services and improving the workflow of teams I worked with. I wanted to take the product improvement one step further by learning the technical skills to contribute beyond the testing phase. </p>
+                    <h3 class="center black-text">Full Stack Developer</h3>
+                    <span>I’m a marketer turned full stack developer looking to find a role that challenges me and allows me to use my refined skills in customer relations in the tech field. As a former marketer, I worked alongside engineers and participated in product testing. This started my passion for improving company products and services and improving the workflow of teams I worked with. I wanted to take the product improvement one step further by learning the technical skills to contribute beyond the testing phase. </span>
+                    <!-- <h3 class="black-text center hide-on-large-only">Shawn Kim</h1> -->
+                    <!-- <h5 class="center">Full Stack Developer</h2> -->
                 </div>
             </div>
         <!-- </div> -->
         <div class="row z-depth-1">
-            <a href="./pages/projects.html">
+            <a class="modal-trigger" href="#modal1">
                 <div id="project-card" class="col s4 center">
                     <div class="row"></div>
                     <i class="large material-icons">folder</i>
@@ -41,7 +44,7 @@
                     <h3>Projects</h3>
                 </div>
             </a>
-            <a href="">
+            <a class="modal-trigger" href="#modal2">
                 <div id="skills-card" class="col s4 center">
                     <div class="row"></div>
                     <i class="large material-icons">code</i>
@@ -49,14 +52,51 @@
                     <h3>Skills</h3>
                 </div>
             </a>
-            <div id="about-card" class="col s4 center">
-                <div class="row"></div>
-                <i class="large material-icons">email</i>
-                <div class="row"></div>
-                <h3>Contact</h3>
-            </div>
+            <a class="modal-trigger" href="#modal3">
+                <div id="about-card" class="col s4 center">
+                    <div class="row"></div>
+                    <i class="large material-icons">email</i>
+                    <div class="row"></div>
+                    <h3>Contact</h3>
+                </div>
+            </a>
         </div>
     </main>
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Projects</h4>
+            <ul>
+                <li>
+                    <a href="./pages/ezbudget.html">EZ Budget App</a>
+                </li>
+                <li>
+                    <a href="./pages/illistrious.html">Illistrious App</a>
+                </li>
+                <li>
+                    <a href="./pages/gettingthere.html">Getting There App</a>
+                </li>
+                <li>
+                    <a href="./pages/guessman.html">Guessman Game</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <h4>Tech Skills</h4>
+                <p>JavaScript | CSS3 | HTML5 | Node | React | Express | Python | Django | PostgeSQL | Heroku | Materialize</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <h4>Modal Header</h4>
+                <a href="./pages/projects.html">Projects</a>
+        </div>
+    </div>
     <!-- <div class="col s12 m8 offset-m2 l6 offset-l3"> -->
  
         <!-- <ul class="sidenav sidenav-fixed collapsible" id="mobile-links">
@@ -166,6 +206,9 @@ M.Sidenav.init(elems);
 // for collapsible
 var collaps = document.querySelectorAll('.collapsible');
 M.Collapsible.init(collaps);
+// for modal
+var modals = document.querySelectorAll('.modal');
+M.Modal.init(modals);
 
 </script>
 </html>
