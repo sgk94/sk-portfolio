@@ -37,6 +37,16 @@ h3 {
     color: #fafafa;
 }
 
+.app-links {
+    font-size: 30px;
+    color: black;
+}
+
+.project-links {
+    font-size: 20px;
+    color: black;
+}
+
 #shawnprof {
     padding: 0;
     border-style: solid;
